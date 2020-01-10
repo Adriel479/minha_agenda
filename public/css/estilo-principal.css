@@ -66,11 +66,12 @@ main {
         background-color: #333745;
         color: #eef5db;
         width: 100%;
+        
     }
 
     #conteudo {
-        width: 80%;
+        width: 90%;
         margin: auto;
-        padding: auto 50%;
+        padding: auto;
     }
 }
