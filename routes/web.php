@@ -18,3 +18,7 @@ Route::get('/', function () {
 Route::get('/novo-contato', function() {
     return view('novo-contato');
 });
+
+Route::get('/contatos', function() {
+    return view('contatos');
+});
