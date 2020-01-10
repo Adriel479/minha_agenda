@@ -3,7 +3,7 @@
     <meta charset="utf-8">
     <title>Minha Agenda</title>
     <link rel="stylesheet" href="/css/bootstrap.min.css" />
-    <link rel="stylesheet" href="/css/estilo-minha-agenda.css" />
+    <link rel="stylesheet" href="/css/estilo-pagina-inicial.css" />
 </head>
 <body>
     
