@@ -1,9 +1,19 @@
-@extends('template-agenda')
+@extends('agenda.template')
 @section('conteudo')
 
     <h2 class="text-center">Novo contato</h2>
 
-    <form action="" method="post">
+    @if ($errors->any())
+        <ul class="alert alert-danger">
+            @foreach ($errors->all() as $error)
+                <li>{{ $error }}</li>
+            @endforeach
+        </ul>
+    @endif
+
+    <form action="{{route('store')}}" method="post">
+    
+        @csrf
 
         <div class="form-group">
             <label for="nome">Nome:</label>

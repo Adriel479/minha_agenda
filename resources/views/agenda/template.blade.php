@@ -18,22 +18,15 @@
             </header>
             <hr class="borda" />
             <nav>
-                <ul>
+                <ul>                  
                     <li>
-                        <a href="/mensagens">
-                            <i style="font-size: 50px;" class="fa fa-home"></i>
-                            <p>Início</p>
-                        </a>
-                    </li>
-                    
-                    <li>
-                        <a href="/novo-contato">
+                        <a href="{{route('create')}}">
                             <i style="font-size: 50px;" class="fa fa-user-plus"></i>
                             <p>Registre seus contatos preferidos</p>
                         </a>
                     </li>
                     <li>
-                        <a href="/contatos">
+                        <a href="{{route('list')}}">
                             <i style="font-size: 50px;" class="fa fa-address-card"></i>
                             <p>Visualize, edite e remova seus contatos de forma simples e elegante</p>
                         </a>

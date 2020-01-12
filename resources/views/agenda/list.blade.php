@@ -1,4 +1,4 @@
-@extends('template-agenda')
+@extends('agenda.template')
 @section('conteudo')
 
     <h2 class="text-center">Contatos</h2>
@@ -21,14 +21,13 @@
                     <td>{{ $contato->email }}</td>
                     <td>{{ $contato->telefone }}</td>
                     <td>
-                        <a href="#" class="d-block badge badge-primary"><i style="font-size: 20px" class="fa fa-edit "></i></a>
-                        <a href="#" class="d-block badge badge-danger"><i style="font-size: 20px" class="fa fa-trash"></i></a>
+                        <a href="{{route('edit', ['id'=>$contato->id])}}" class="d-block badge badge-primary"><i style="font-size: 20px" class="fa fa-edit "></i></a>
+                        <a href="{{route('delete', ['id'=>$contato->id])}}" class="d-block badge badge-danger"><i style="font-size: 20px" class="fa fa-trash"></i></a>
                         <a href="#" class="d-block badge badge-success"><i style="font-size: 20px" class="fa fa-whatsapp"></i></a>
                     </td>
                 </tr>
             @endforeach
         </tbody>
     </table>
- 
 
 @stop
